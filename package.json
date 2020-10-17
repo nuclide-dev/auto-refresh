@@ -1,0 +1,9 @@
+{
+  "name": "@nuclide-dev/auto-refresh",
+  "version": "1.0.0",
+  "description": "Auto Refresh +",
+  "main": "index.js",
+  "repository": "https://github.com/nuclide-dev/auto-refresh",
+  "author": "nuclide.dev <support@nuclide.dev>",
+  "license": "MIT"
+}
