@@ -1,9 +1,39 @@
 {
   "name": "@nuclide-dev/auto-refresh",
   "version": "1.0.0",
-  "description": "Auto Refresh +",
-  "main": "index.js",
-  "repository": "https://github.com/nuclide-dev/auto-refresh",
+  "description": "Refresh a page automatically and get notified when keywords change.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuclide-dev/auto-refresh.git"
+  },
   "author": "nuclide.dev <support@nuclide.dev>",
-  "license": "MIT"
+  "homepage": "https://github.com/nuclide-dev/auto-refresh#readme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nuclide-dev/auto-refresh/issues"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "yarn lint:js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.7",
+    "vuesax": "^4.0.1-alpha.25"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2"
+  }
 }
