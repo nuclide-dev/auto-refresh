@@ -7,14 +7,6 @@
     "default_popup": "/index.html#/popup",
     "default_title": "Auto Refresh +"
   },
-  "content_scripts": [
-    {
-      "all_frames": false,
-      "js": ["assets/js/nuclide.js"],
-      "matches": ["http://*/*", "https://*/*"],
-      "run_at": "document_idle"
-    }
-  ],
   "description": "Refresh a page automatically and get notified when keywords change.",
   "icons": {
     "128": "assets/icon/icon-64.png",
@@ -24,14 +16,7 @@
   "manifest_version": 2,
   "name": "Auto Refresh +",
   "options_page": "/index.html#/options",
-  "permissions": [
-    "tabs",
-    "http://*/*",
-    "https://*/*",
-    "webNavigation",
-    "storage",
-    "notifications"
-  ],
+  "permissions": ["tabs", "activeTab", "storage", "notifications"],
   "version": "1.0.0",
   "homepage_url": "https://github.com/nuclide-dev/auto-refresh",
   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com 'sha256-R59bp/dPfAyMYicBFE0YOoSN8jtdBogwonKzttkEnm0='; object-src 'self';",
