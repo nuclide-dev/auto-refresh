@@ -7,7 +7,7 @@
       "source.fixAll.eslint": true
     },
     "[vue]": {
-      "editor.defaultFormatter": "octref.vetur"
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
   }
   
